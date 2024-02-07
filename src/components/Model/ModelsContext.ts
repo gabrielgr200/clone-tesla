@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 
-interface CarModel {
+export interface CarModel {
     modelName: string,
     overlayNode: ReactNode,
     sectionRef: React.RefObject<HTMLElement>
@@ -9,8 +9,8 @@ interface CarModel {
 interface ModelsContext {
     wrapperRef: React.RefObject<HTMLElement>
     registeredModels: CarModel[]
-    registeredModel: (model: CarModel) => void
-    unregisteredModel: (modelName: string) => void
+    registerModel: (model: CarModel) => void
+    unregisterModel: (modelName: string) => void
     getModelByName: (modelName: string) => CarModel | null
 }
 
