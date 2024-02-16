@@ -28,17 +28,17 @@ text-align: center;
 `;
 
 export const Buttons = styled.div`
-display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin-bottom: 130px;
 
   > button {
-    background: #1a1720;
-    color: #fff;
+    background: #fff;
+    color: #1a1720;
     opacity: 0.8;
+    width: 240px;
 
     font-size: 12px;
     font-weight: 500;
@@ -46,14 +46,14 @@ display: flex;
     text-transform: uppercase;
 
     padding: 13px 40px;
-    border-radius: 20px;
+    border-radius: 5px;
     border: none;
     outline: 0;
     cursor: pointer;
 
     &.white {
-      background: #fff;
-      color: #1a1720;
+      background: #1a1720;
+      color: #fff;
       opacity: 0.65;
     }
 

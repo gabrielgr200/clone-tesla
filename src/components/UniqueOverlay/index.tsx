@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header, Footer, Logo, Burguer } from './styles';
+import { Container, Header, Footer, Logo, Burguer, Links } from './styles';
 import useWrapperScroll from '../Model/UseWrapperScroll';
 import { useTransform } from 'framer-motion';
 
@@ -12,7 +12,16 @@ const UniqueOverlay = () => {
     <Container>
       <Header>
         <Logo />
-        <Burguer />
+        <Links>
+          <ul>
+            <li><a href="#">Vehicles</a></li>
+            <li><a href="#">Energy</a></li>
+            <li><a href="#">Charging</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </Links>
+        {/* <Burguer /> */}
       </Header>
 
       <Footer style={{ opacity }}>

@@ -11,13 +11,13 @@ const Page: React.FC = () => {
       <ModelsWrapper>
         <div>
           {[
-            'Model One',
-            'Model Two',
-            'Model Three',
-            'Model Four',
-            'Model Five',
-            'Model Six',
-            'Model Seven',
+            'Model Y',
+            'Powerwall',
+            'Brand New Model 3',
+            'Model X',
+            'Model S',
+            'Model Solar Panels',
+            'Model Solar Roof',
           ].map(modelName => (
             <ModelSection
               key={modelName}
@@ -25,7 +25,7 @@ const Page: React.FC = () => {
               modelName={modelName}
               overlayNode={<DefaultOverlayContent
                 label={modelName}
-                description='Order Online for Delivery'
+                description='Lease starting at $329'
               />
               }
             />

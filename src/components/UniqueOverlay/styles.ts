@@ -21,7 +21,7 @@ justify-content: space-between;
 padding: 0 20px;
 min-height: 52px;
 `
- 
+
 export const Logo = styled(LogoSVG)`
 height: 17px;
 cursor: pointer;
@@ -32,6 +32,26 @@ width: 24px;
 height: 24px;
 cursor: pointer;
 padding-right: 5px;
+`
+
+export const Links = styled.div`
+ ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+
+  li {
+    list-style: none;
+    padding: 1em;
+
+    a {
+      text-decoration: none;
+      color: #242424;
+      font-weight: 500
+    }
+  }
+ }
 `
 
 export const Footer = styled(motion.footer)`
